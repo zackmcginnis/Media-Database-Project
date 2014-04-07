@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- template parameters -->
+<title>CS261 Assignment 4</title>
+<style type="text/css">
+<!--
+.code {
+	font-family: Consolas, "Courier New", Courier, monospace;
+	font-size: 14px;
+}
+.header {
+	font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+.text {
+	font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+	font-size: medium;
+	font-style: normal;
+}
+.title {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+}
+.tableCellBg {
+	background-color: #FDE7D9;
+}
+-->
+</style>
+</head>
+<body class="text">
+<p class="title">CS261 Assignment 4 Instructions</p>
+<p class="header">Code To Start With</p>
+<p>This assignment provides a you with a .zip file containing the code you should start with. The .zip file will expand into a folder that contains a <!-- #BeginLibraryItem "/Library/VC++.lbi" --> Visual Studio 2010<!-- #EndLibraryItem --> project.</p>
+<p>You should not change the structure of your project folder <em>in any way</em>. Do not rename files, do not move files to a different folder, do not create new folders or files, etc. Do not add any new classes to your project. I grade your code using a Python script that depends on files and folders being in the expected places.</p>
+<p>This assignment  consists of taking your solution to Assignment 3 and &ldquo;translating&rdquo; it into C++ using the <!-- #BeginLibraryItem "/Library/CPP Standard Library.lbi" -->C++ Standard Library<!-- #EndLibraryItem --> in place of the Java Collections Framework.<span style="font-style: italic"></span></p>
+<p>You are required to use<!-- #BeginLibraryItem "/Library/VC++.lbi" --> Visual Studio 2010<!-- #EndLibraryItem --> or Visual C++ 2010 Express (which is a free <a href="http://www.microsoft.com/express/Windows/" target="_blank">download</a>) for this C++ assignment. (You can get <!-- #BeginLibraryItem "/Library/VC++.lbi" --> Visual Studio 2010<!-- #EndLibraryItem --> as a free download from PCC&rsquo;s <a href="http://msdn04.e-academy.com/pccmurray_cis" target="_blank">MSDNAA account</a>.)</p>
+<p>There is no Premium version for this assignment.</p>
+<p class="header">Database of Media Items</p>
+<p>In this assignment, you will implement a database for a library. This library stores three types of items:</p>
+<ul>
+	<li>books</li>
+	<li>music albums</li>
+	<li>movies</li>
+</ul>
+<p>You will start with <strong>asgmt04.zip</strong>, which contains a<!-- #BeginLibraryItem "/Library/VC++.lbi" -->
+Visual Studio 2010<!-- #EndLibraryItem --> project.</p>
+<p><span style="font-weight: bold">Library.h</span> contains the member functions that are used by <span style="font-weight: bold">Asgmt04.cpp</span>. As provided, <span style="font-weight: bold">Library.cpp</span> contains a stub implementation for each of these functions. (A &ldquo;stub&rdquo; is a function definition with no useful code in it.) </p>
+<p>Once you have properly implemented the library functionality, your code&rsquo;s output should be identical to the contents of <span style="font-weight: bold">asgmt04.output.txt</span> (except for your name instead of the instructor&rsquo;s name). This will require all of your output lists (including keywords, band members, movie casts) to be sorted alphabetically. Lists of Item instances should be sorted by <span style="font-style: italic">title</span>. (The required output is <em>exactly the same</em> as the required output for Assignment 3.)</p>
+<p>Make sure to place all of your printing code in the appropriate class, as defined by object-oriented design in the context of C++. You should accomplish this by using polymorphism combined with overloading <span class="code">operator&lt;&lt;</span>.</p>
+<p>You should use the <!-- #BeginLibraryItem "/Library/CPP Standard Library.lbi" -->C++ Standard Library<!-- #EndLibraryItem --> where appropriate &ndash; do not reinvent that wheel for this assignment.</p>
+<p>You should code for &ldquo;high performance,&rdquo; meaning fast access. This means that you should choose components of   the <!-- #BeginLibraryItem "/Library/CPP Standard Library.lbi" -->C++ Standard Library<!-- #EndLibraryItem --> that support the highest possible speed consistent with the tasks your code needs to perform. To put this another way, <em>do not do linear searches when a faster method is available in the <!-- #BeginLibraryItem "/Library/CPP Standard Library.lbi" -->C++ Standard Library<!-- #EndLibraryItem -->.</em> For example, the set of items for a particular keyword should not be collected by a linear search through all of the items contained in the library.</p>
+<p style="font-style: italic">The items  included in the library database reflect either the instructor&rsquo;s superior taste, his advanced age, or perhaps both.</p>
+<span class="header">Code To Start With </span>
+<p>The code for you to start with is provided as a <!-- #BeginLibraryItem "/Library/VC++.lbi" --> Visual Studio 2010<!-- #EndLibraryItem --> project. To get this project, download and expand <span style="font-weight: bold">asgmt04.zip</span>. The project can also be used in Visual C++ 2010 Express. </p>
+<p>Add code to the definition and implementation files as needed. You can add public and private members, but do not remove any of the public members that are already there. Also, make no changes to <strong>Asgmt04.cpp</strong> other than to have it print your name instead of the instructor&rsquo;s name. </p>
+<span class="header">Printed Output</span>
+<p>Your code&rsquo;s printed output should be identical to the contents of <span style="font-weight: bold">asgmt04.output.txt</span>, a file that&rsquo;s provided as part of this lab. &ldquo;Identical&rdquo; means the Linux utility <span class="code">diff</span> will find no differences between your code&rsquo;s output and the provided file when called with flags: <span class="code">-w -B</span>.   In other words, the sequence of non-whitespace characters in your   output has to be identical to what&rsquo;s in the provided file, but differences in whitespace will be   ignored. You are still required to produce output that lines up with   itself properly, as the provided file does. </p>
+<p>The required output is <em>exactly the same</em> as the required output for Assignment 3.</p>
+<span class="header">Memory Leaks</span>
+<p>Your code is required to run in <!-- #BeginLibraryItem "/Library/VC++.lbi" --> Visual Studio 2010<!-- #EndLibraryItem --> Express without memory leaks. The starter code for this project includes support for Visual Studio&rsquo;s <a href="http://msdn.microsoft.com/en-us/library/x98tx3cf%28v=VS.100%29.aspx" target="_blank">memory leak detection</a> feature.</p>
+<span class="header">Initialization Lists </span>
+<p>The constructors in your code should use <a href="http://www.learncpp.com/cpp-tutorial/101-constructor-initialization-lists/" target="_blank">initialization lists</a> to the maximum extent possible. Points will be deducted where this is not done.</p>
+<p>Here is a class definition:</p>
+<blockquote>
+  <pre>class SomeClass
+{
+    ...
+private:
+    int     dataMember1;
+    int     dataMember2;
+}</pre>
+</blockquote>
+<p>Here is a constructor for this class that does not use initialization lists:</p>
+<blockquote>
+  <pre>SomeClass::SomeClass(int dataMember1, int dataMember2)
+{
+    this-&gt;dataMember1 = dataMember1;
+    this-&gt;dataMember2 = dataMember2;
+}</pre>
+</blockquote>
+<p>And here is one that does use initialization lists: </p>
+<blockquote>
+  <pre>SomeClass::SomeClass(int dataMember1, int dataMember2) :
+    dataMember1(dataMember1), dataMember2(dataMember2)
+{
+}</pre>
+</blockquote>
+<p>An initialization list consists of comma-separated items between the <strong>:</strong> and the <strong>{</strong>. Each of these items is of the form:</p>
+<blockquote>
+	<pre>dataMemberName(value)</pre>
+</blockquote>
+<p>Each item sets the named data member to the value in the parentheses.   In the SomeClass constructor above, each of the two initialization list   items sets its data member to the constructor argument named inside the   parentheses. This is weird-looking syntax, but it is standard usage in C++. </p>
+<p class="header">Required Zip File Structure</p>
+<p><em>Do not</em> change the structure of your project folder in any way. Do not move files around, rename them, or add new files. I grade your code using a Python script that depends on files being in predictable places. Nothing in this assignment requires files be moved, renamed, etc.</p>
+<p>Here is the required structure for your zip file:</p>
+<table width="694">
+  <tr>
+    <td width="223" align="left" valign="top"><ul>
+      <li>asgmt04
+        <ul>
+          <li>Asgmt04.cpp</li>
+          <li>asgmt04.html</li>
+          <li>asgmt04.output.txt</li>
+          <li>asgmt04.vcxproj</li>
+          <li>asgmt04.vcxproj.filters</li>
+          <li>asgmt04.vcxproj.user</li>
+          <li>Book.cpp</li>
+          <li>Book.h</li>
+          <li>Item.cpp</li>
+          <li>Item.h</li>
+          <li>Library.cpp</li>
+          <li>Library.h</li>
+          <li>memoryleakdetect.h</li>
+          <li>Movie.cpp</li>
+          <li>Movie.h</li>
+          <li>MusicAlbum.cpp</li>
+          <li>MusicAlbum.h</li>
+      </ul>
+      </li>
+    </ul></td>
+    <td width="26" align="left" valign="top">&nbsp;</td>
+    <td width="429" align="left" valign="top"><p>&nbsp;<em>folder</em><br />
+      &nbsp;<br />
+      <em>not required for submission, but OK if you leave it there</em>&nbsp;<br />
+      <em>not required for submission, but OK if you leave it there</em>&nbsp;<br />
+      &nbsp;<br />
+      <br />
+      &nbsp;<br />
+      <br />
+      <br />
+    </p></td>
+  </tr>
+</table>
+<p class="header">Grading Your Code</p>
+<p>I use a <a href="http://www.python.org" target="_blank">Python</a> script to grade your code. Because of this,<em> it is very important that you not make any changes to file names or folder structure in your project</em>. If you do this, my script will not run. You will lose points if my script fails to run because you ignored this request. See previous section for the required structure of your zip file.</p>
+<p>My script will build your code in <!-- #BeginLibraryItem "/Library/VC++.lbi" --> Visual Studio 2010<!-- #EndLibraryItem -->. Your code needs to compile without errors or warnings and run correctly in  that environment. Code that does not compile will receive zero points.  Your code must run correctly when you do either &ldquo;Start Debugging&rdquo; or &ldquo;Start Without Debugging.&rdquo; Code that crashes in <!-- #BeginLibraryItem "/Library/VC++.lbi" --> Visual Studio 2010<!-- #EndLibraryItem --> will receive zero points.</p>
+<p> My script will run your code from <a href="http://windows.microsoft.com/en-US/windows7/Command-Prompt-frequently-asked-questions" target="_blank">Windows Command Prompt</a> (it will run <span class="code">Debug\asgmt04.exe</span>). Code that crashes when run by my script will receive zero points.</p>
+<p><span class="header">To Prepare Your Project for Submission</span></p>
+<p>First, make sure that you remove all breakpoints, and any calls to <span class="code">system(&quot;pause&quot;)</span> from your code.</p>
+<p>Then &ldquo;clean&rdquo; your project by doing the following: 
+</p>
+<ul>
+	<li>execute <strong>Clean Solution</strong> in the <strong>Build</strong> menu </li>
+	<li>close <!-- #BeginLibraryItem "/Library/VC++.lbi" --> Visual Studio 2010<!-- #EndLibraryItem -->, and then delete the following from your solution&rsquo;s root folder:
+      <ul>
+			<li>the <span style="font-weight: bold">ipch</span> subfolder</li>
+			<li>the <span style="font-weight: bold">Debug</span> subfolder</li>
+			<li>the <span style="font-weight: bold">.sdf</span> file </li>
+		</ul>
+	</li>
+</ul>
+<p>After cleaning your project, compress it into <strong>asgmt04.zip</strong>. Make sure you have your Zip application set to <em>preserve the  folder structure</em> of your project, and make sure that your .zip file <em>will extract into a single folder</em>, the way that the .zip files from this course do. You can use any Zip utility (e.g. <a href="http://7-zip.org/" target="_blank">7-Zip</a>) to check the structure of your .jar file.<br />
+		<br />
+	Doing these things will ensure that your .zip file is as small as   possible,  which will make both your upload and my download quicker.</p>
+<!-- #BeginLibraryItem "/Library/submit asgmt to D2L.lbi" -->
+<!-- This library item is designed for use with either "java assignment.dwt" or "cpp assignment.dwt".
+	 It requires that .header be defined in the CSS of the .dwt file -->
+<!-- uses .header from the .dwt file's CSS -->
+<span class="header">To Submit This Assignment</span>
+<p>Submit the requested file to Desire2Learn. &nbsp; Make sure that your code prints your name, assignment description, and number, as requested. </p>
+<ul>
+  <li>Be  certain to check that you completed the upload successfully. After you click  the Upload File button, you must also click the <strong>SUBMIT ASSIGNMENT </strong>button. This  is very easy to forget. If you do not do this, I will not see your work and you will get a grade of zero for the assignment. I would recommend entering an  email address so you can be notified that the upload was completed  successfully.</li>
+  <li>You  may upload as many versions as you wish prior to the due date. I will only see  and grade the final one. You will not be able to upload assignments after due date.</li>
+  <li>Points will be deducted for uploading a file with a name that is not as specified. Every term I get a few students whose approach to following directions is, shall we say, &ldquo;creative.&rdquo; I encourage creativity in general, but there are places where it is <u>not appropriate</u>.</li>
+</ul>
+<!-- #EndLibraryItem -->
+<p>&nbsp;</p>
+</body>
+</html>

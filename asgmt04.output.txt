@@ -1,0 +1,423 @@
+CS261 - Assignment 4 (Regular) - Michael Trigoboff
+
+>>>>>> adding items to library:
+
+-Book-
+author:    Mark Haddon
+# pages:   240
+title:     The Curious Incident of the Dog in the Night-Time
+keywords:  Asperger's Syndrome, autism
+
+-Book-
+author:    Robert A. Heinlein
+# pages:   325
+title:     Starship Troopers
+keywords:  science fiction, war, weapons
+
+-Book-
+author:    Robert A. Heinlein
+# pages:   389
+title:     The Moon Is A Harsh Mistress
+keywords:  moon, science fiction, social structures
+
+-Book-
+author:    Hunter S. Thompson
+# pages:   224
+title:     Fear and Loathing in Las Vegas
+keywords:  drugs, gonzo, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Europe In '72
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Steal Your Face
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     From the Mars Hotel
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Jerry Garcia Band
+# songs:   15
+members:   Donna Godcheaux, Jerry Garcia, John Kahn, Keith Godcheaux
+title:     Don't Let Go
+keywords:  acid rock, jam bands
+
+-Music Album-
+band:      Dave Brubeck Quartet
+# songs:   7
+members:   Dave Brubeck, Eugene Wright, Joe Morello, Paul Desmond
+title:     Time Out
+keywords:  fifties, jazz, unusual time signatures
+
+-Music Album-
+band:      Urszula Dudziak
+# songs:   7
+members:   Adam Makowicz, Urszula Dudziak
+title:     Newborn Light
+keywords:  cosmic, jazz, scat singing
+
+-Movie-
+director:  Sofia Coppola
+# scenes:  14
+cast:      Bill Murray, Scarlett Johansson
+title:     Lost In Translation
+keywords:  Japan, loneliness, time
+
+-Movie-
+director:  Harold Ramis
+# scenes:  14
+cast:      Andie MacDowell, Bill Murray
+title:     Groundhog Day
+keywords:  groundhog, newscaster, time
+
+-Movie-
+director:  D.A. Pennebaker
+# scenes:  14
+cast:      Country Joe and the Fish, Hugh Masakela, Janis Joplin, Jefferson Airplane, Jimi Hendrix
+title:     Monterey Pop
+keywords:  concert, rock, sixties
+
+>>>>>> printing items from library
+
+>>> books:
+
+-Book-
+author:    Hunter S. Thompson
+# pages:   224
+title:     Fear and Loathing in Las Vegas
+keywords:  drugs, gonzo, sixties
+
+-Book-
+author:    Robert A. Heinlein
+# pages:   325
+title:     Starship Troopers
+keywords:  science fiction, war, weapons
+
+-Book-
+author:    Mark Haddon
+# pages:   240
+title:     The Curious Incident of the Dog in the Night-Time
+keywords:  Asperger's Syndrome, autism
+
+-Book-
+author:    Robert A. Heinlein
+# pages:   389
+title:     The Moon Is A Harsh Mistress
+keywords:  moon, science fiction, social structures
+
+>>> music albums:
+
+-Music Album-
+band:      Jerry Garcia Band
+# songs:   15
+members:   Donna Godcheaux, Jerry Garcia, John Kahn, Keith Godcheaux
+title:     Don't Let Go
+keywords:  acid rock, jam bands
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Europe In '72
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     From the Mars Hotel
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Urszula Dudziak
+# songs:   7
+members:   Adam Makowicz, Urszula Dudziak
+title:     Newborn Light
+keywords:  cosmic, jazz, scat singing
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Steal Your Face
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Dave Brubeck Quartet
+# songs:   7
+members:   Dave Brubeck, Eugene Wright, Joe Morello, Paul Desmond
+title:     Time Out
+keywords:  fifties, jazz, unusual time signatures
+
+>>> movies:
+
+-Movie-
+director:  Harold Ramis
+# scenes:  14
+cast:      Andie MacDowell, Bill Murray
+title:     Groundhog Day
+keywords:  groundhog, newscaster, time
+
+-Movie-
+director:  Sofia Coppola
+# scenes:  14
+cast:      Bill Murray, Scarlett Johansson
+title:     Lost In Translation
+keywords:  Japan, loneliness, time
+
+-Movie-
+director:  D.A. Pennebaker
+# scenes:  14
+cast:      Country Joe and the Fish, Hugh Masakela, Janis Joplin, Jefferson Airplane, Jimi Hendrix
+title:     Monterey Pop
+keywords:  concert, rock, sixties
+
+>>> items for keyword: science fiction
+
+-Book-
+author:    Robert A. Heinlein
+# pages:   325
+title:     Starship Troopers
+keywords:  science fiction, war, weapons
+
+-Book-
+author:    Robert A. Heinlein
+# pages:   389
+title:     The Moon Is A Harsh Mistress
+keywords:  moon, science fiction, social structures
+
+>>> items for keyword: jazz
+
+-Music Album-
+band:      Urszula Dudziak
+# songs:   7
+members:   Adam Makowicz, Urszula Dudziak
+title:     Newborn Light
+keywords:  cosmic, jazz, scat singing
+
+-Music Album-
+band:      Dave Brubeck Quartet
+# songs:   7
+members:   Dave Brubeck, Eugene Wright, Joe Morello, Paul Desmond
+title:     Time Out
+keywords:  fifties, jazz, unusual time signatures
+
+>>> items for keyword: cosmic
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Europe In '72
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     From the Mars Hotel
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Urszula Dudziak
+# songs:   7
+members:   Adam Makowicz, Urszula Dudziak
+title:     Newborn Light
+keywords:  cosmic, jazz, scat singing
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Steal Your Face
+keywords:  acid rock, cosmic, jam bands, sixties
+
+>>> items for keyword: autism
+
+-Book-
+author:    Mark Haddon
+# pages:   240
+title:     The Curious Incident of the Dog in the Night-Time
+keywords:  Asperger's Syndrome, autism
+
+>>> items for keyword: sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Europe In '72
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Book-
+author:    Hunter S. Thompson
+# pages:   224
+title:     Fear and Loathing in Las Vegas
+keywords:  drugs, gonzo, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     From the Mars Hotel
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Movie-
+director:  D.A. Pennebaker
+# scenes:  14
+cast:      Country Joe and the Fish, Hugh Masakela, Janis Joplin, Jefferson Airplane, Jimi Hendrix
+title:     Monterey Pop
+keywords:  concert, rock, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Steal Your Face
+keywords:  acid rock, cosmic, jam bands, sixties
+
+>>> items for keyword: time
+
+-Movie-
+director:  Harold Ramis
+# scenes:  14
+cast:      Andie MacDowell, Bill Murray
+title:     Groundhog Day
+keywords:  groundhog, newscaster, time
+
+-Movie-
+director:  Sofia Coppola
+# scenes:  14
+cast:      Bill Murray, Scarlett Johansson
+title:     Lost In Translation
+keywords:  Japan, loneliness, time
+
+>>> items for keyword: fifties
+
+-Music Album-
+band:      Dave Brubeck Quartet
+# songs:   7
+members:   Dave Brubeck, Eugene Wright, Joe Morello, Paul Desmond
+title:     Time Out
+keywords:  fifties, jazz, unusual time signatures
+
+>>> items for keyword: forties
+
+none
+
+>>> books by Robert A. Heinlein:
+
+-Book-
+author:    Robert A. Heinlein
+# pages:   325
+title:     Starship Troopers
+keywords:  science fiction, war, weapons
+
+-Book-
+author:    Robert A. Heinlein
+# pages:   389
+title:     The Moon Is A Harsh Mistress
+keywords:  moon, science fiction, social structures
+
+>>> books by Mark Haddon:
+
+-Book-
+author:    Mark Haddon
+# pages:   240
+title:     The Curious Incident of the Dog in the Night-Time
+keywords:  Asperger's Syndrome, autism
+
+>>> music by the Grateful Dead:
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Europe In '72
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     From the Mars Hotel
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Steal Your Face
+keywords:  acid rock, cosmic, jam bands, sixties
+
+>>> music by Kiss:
+
+none
+
+>>> movies by Sofia Coppola:
+
+-Movie-
+director:  Sofia Coppola
+# scenes:  14
+cast:      Bill Murray, Scarlett Johansson
+title:     Lost In Translation
+keywords:  Japan, loneliness, time
+
+>>> music by Jerry Garcia:
+
+-Music Album-
+band:      Jerry Garcia Band
+# songs:   15
+members:   Donna Godcheaux, Jerry Garcia, John Kahn, Keith Godcheaux
+title:     Don't Let Go
+keywords:  acid rock, jam bands
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Europe In '72
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     From the Mars Hotel
+keywords:  acid rock, cosmic, jam bands, sixties
+
+-Music Album-
+band:      Grateful Dead
+# songs:   12
+members:   Bill Kreutzman, Bob Weir, Donna Godcheaux, Jerry Garcia, Keith Godcheaux, Mickey Hart, Phil Lesh
+title:     Steal Your Face
+keywords:  acid rock, cosmic, jam bands, sixties
+
+>>> movies with Bill Murray:
+
+-Movie-
+director:  Harold Ramis
+# scenes:  14
+cast:      Andie MacDowell, Bill Murray
+title:     Groundhog Day
+keywords:  groundhog, newscaster, time
+
+-Movie-
+director:  Sofia Coppola
+# scenes:  14
+cast:      Bill Murray, Scarlett Johansson
+title:     Lost In Translation
+keywords:  Japan, loneliness, time
+
